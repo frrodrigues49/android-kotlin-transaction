@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btn-confirmpayment"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_button"
+        android:text="Confirmar pagamento"
+        android:textColor="@color/colorTextDark"
+        app:layout_constraintBottom_toTopOf="@+id/btn-cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn-cancelar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_button2"
+        android:text="Cancelar"
+        android:textColor="@color/colorSecond"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valor a pagar"
+            android:textColor="@color/colorTextDark" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="R$ 1.000,00"
+            android:textColor="@color/colorTextLigth"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/saldo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saldo em conta R$ 1.200,00"
+            android:textColor="@color/colorTextDark" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#aaa9a9" />
+
+        <TextView
+            android:id="@+id/dados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Dados do recebedor"
+            android:textColor="@color/colorTextDark" />
+
+        <TextView
+            android:id="@+id/doc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CPF 987.654.321-00"
+            android:textColor="@color/colorTextLigth"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jonatan Almeida da Cunha"
+            android:textColor="@color/colorTextLigth"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dados_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Dados do pagamento"
+            android:textColor="@color/colorTextDark" />
+
+        <TextView
+            android:id="@+id/payment_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="19/05/2021"
+            android:textColor="@color/colorTextLigth"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lblfonte_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Fonte de pagamento"
+            android:textColor="@color/colorTextDark" />
+
+        <TextView
+            android:id="@+id/fonte_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conta Corrente 12345-5"
+            android:textColor="@color/colorTextLigth"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lblforma_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Forma de pagamento"
+            android:textColor="@color/colorTextDark" />
+
+        <TextView
+            android:id="@+id/forma_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pix - Open Banking"
+            android:textColor="@color/colorTextLigth"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_container"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btn-confirmpayment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="IMPORTANTE:"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTextLigth"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0.1"
+            android:text="A transação só será efetivada após a\n sua confirmação e não poderá ser\n Cancelada ou Estornada\n posteriormente."
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextLigth"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
